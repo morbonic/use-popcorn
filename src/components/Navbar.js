@@ -1,13 +1,12 @@
 import { Logo } from "./Logo";
 import { Searchbar } from "./Searchbar";
-import { CountResult } from "./CountResult";
 
-export function Navbar({ movies }) {
+export function Navbar({ children }) {
   return (
     <nav className="nav-bar">
       <Logo />
       <Searchbar />
-      <CountResult movies={movies} />
+      {children}
     </nav>
   );
 }
